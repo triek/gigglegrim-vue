@@ -1,6 +1,5 @@
 <template>
 <section class="hero" data-active="home">
-<body>
     <!-- Navigation bar (navbar.html) -->
     <div id="site-navbar"></div>
 
@@ -390,10 +389,9 @@
 
     <!-- Footer (footer.html) -->
     <div id="site-footer"></div>
-
-</body>
 </section>
 </template>
+
 <script setup>
 import { onMounted } from 'vue'
 import { initFlavors } from '../composable/useFlavors'
