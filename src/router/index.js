@@ -1,22 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 import Home from '../pages/Home.vue'
+import Login from '../pages/Login.vue'
+import Signup from '../pages/Signup.vue'
+import TShirt from '../pages/TShirt.vue'
+import News from '../pages/News.vue'
+import Contact from '../pages/Contact.vue'
+import Cart from '../pages/Cart.vue'
+import Test from '../pages/Test.vue'
 
 const routes = [
-    { path: '/', component: Home },
-    { path: '/', component: () => import('../pages/Home.vue') },
-    { path: '/login', component: () => import('../pages/Login.vue') },
-    { path: '/signup', component: () => import('../pages/Signup.vue') },
-    { path: '/tshirt', component: () => import('../pages/TShirt.vue') },
-    { path: '/news', component: () => import('../pages/News.vue') },
-    { path: '/contact', component: () => import('../pages/Contact.vue') },
-    { path: '/cart', component: () => import('../pages/Cart.vue') },
-    { path: '/test', component: () => import('../pages/Test.vue') },
+  { path: '/', component: Home },
+  { path: '/login', component: Login },
+  { path: '/signup', component: Signup },
+  { path: '/tshirt', component: TShirt },
+  { path: '/news', component: News },
+  { path: '/contact', component: Contact },
+  { path: '/cart', component: Cart },
+  { path: '/test', component: Test },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
