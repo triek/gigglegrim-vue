@@ -15,7 +15,7 @@
         <div class="carousel-inner">
             <!-- Three slides with captions, autoplay every 2s -->
             <div class="carousel-item active" data-bs-interval="3000">
-                <img src="/images/shop1.png" class="d-block w-100" alt="Ice Cream Slide 1">
+                <img :src="assetUrl('images/shop1.png')" class="d-block w-100" alt="Ice Cream Slide 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h4>Your Anytime Treat Spot</h4>
                     <p>Bright, clean, and ready to serve, there's always a place here for you.</p>
@@ -23,14 +23,14 @@
             </div>
             
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="/images/shop3.png" class="d-block w-100" alt="Ice Cream Slide 2">
+                <img :src="assetUrl('images/shop3.png')" class="d-block w-100" alt="Ice Cream Slide 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h4>The Flavor of History</h4>
                     <p>Decades of smiles, sprinkles, and stories - Since... a very long time ago</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="/images/icecream5.png" class="d-block w-100" alt="Ice Cream Slide 3">
+                <img :src="assetUrl('images/icecream5.png')" class="d-block w-100" alt="Ice Cream Slide 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h4>Perfect Ice Cream</h4>
                     <p>Not a crumb out of place, some say it's always been this way.</p>
@@ -168,16 +168,16 @@
     <div class="container">
         <div class="row g-1">
             <div class="col-sm-6 col-12">
-                <img src="/images/icecream1.png" class="img-fluid gallery-img" alt="Ice Cream 1">
+                <img :src="assetUrl('images/icecream1.png')" class="img-fluid gallery-img" alt="Ice Cream 1">
             </div>
             <div class="col-sm-6 col-12">
-                <img src="/images/icecream2.png" class="img-fluid gallery-img" alt="Ice Cream 2">
+                <img :src="assetUrl('images/icecream2.png')" class="img-fluid gallery-img" alt="Ice Cream 2">
             </div>
             <div class="col-sm-6 col-12">
-                <img src="/images/icecream3.png" class="img-fluid gallery-img" alt="Ice Cream 3">
+                <img :src="assetUrl('images/icecream3.png')" class="img-fluid gallery-img" alt="Ice Cream 3">
             </div>
             <div class="col-sm-6 col-12">
-                <img src="/images/clown2.png" class="img-fluid gallery-img" alt="Ice Cream 4">
+                <img :src="assetUrl('images/clown2.png')" class="img-fluid gallery-img" alt="Ice Cream 4">
             </div>
         </div>
     </div>
@@ -256,7 +256,7 @@
         <div class="p-4 mb-4 card border-info rounded">
             <div class="row">
                 <div class="col-sm-4 col-12">
-                    <img src="/images/car1.png" class="img-fluid story-img" alt="Ice Cream 5">
+                    <img :src="assetUrl('images/car1.png')" class="img-fluid story-img" alt="Ice Cream 5">
                 </div>
                 <div class="col-sm-8 col-12">
                     <p class="lead">Ideal Ice Cream by <strong>Clara M.</strong></p>
@@ -274,7 +274,7 @@
         <div class="p-4 mb-4 card border-info rounded">
             <div class="row">
                 <div class="col-sm-4 col-12">
-                    <img src="/images/machine1.png" class="img-fluid story-img" alt="Ice Cream 5">
+                    <img :src="assetUrl('images/machine1.png')" class="img-fluid story-img" alt="Ice Cream 5">
                 </div>
                 <div class="col-sm-8 col-12">
                     <p class="lead">Nostalgia Ice Cream by <strong>Daniel P.</strong></p>
@@ -291,7 +291,7 @@
         <div class="p-4 mb-4 card border-info rounded">
             <div class="row">
                 <div class="col-sm-4 col-12">
-                    <img src="/images/shop2.png" class="img-fluid story-img" alt="Ice Cream 5">
+                    <img :src="assetUrl('images/shop2.png')" class="img-fluid story-img" alt="Ice Cream 5">
                 </div>
                 <div class="col-sm-8 col-12">
                     <p class="lead">Cozy Space by <strong>Hannah S.</strong></p>
@@ -396,6 +396,7 @@
 import { onMounted } from 'vue'
 import { initFlavors } from '../composable/useFlavors'
 import { initToppings } from '../composable/useToppings'
+import { assetUrl } from '../utils/assetPath'
 
 onMounted(() => {
   initFlavors()
