@@ -1,9 +1,11 @@
+import { assetUrl } from '../utils/assetPath'
+
 export function initToppings() {
 (() => {
 const toppings = [
 {
     id: "sprinkles",
-    img: "/images/topping/topping-sprinkles.png",
+    img: assetUrl('images/topping/topping-sprinkles.png'),
     title: "Rainbow Sprinkles",
     desc: "Colorful crunch that adds a cheerful snap to every lick.",
     price: "+$0.50",
@@ -12,7 +14,7 @@ const toppings = [
 },
 {
     id: "choco-sauce",
-    img: "/images/topping/topping-choco.png",
+    img: assetUrl('images/topping/topping-choco.png'),
     title: "Chocolate Drizzle",
     desc: "Silky cocoa ribbons that melt into the scoop.",
     price: "+$0.70",
@@ -21,7 +23,7 @@ const toppings = [
 },
 {
     id: "caramel-sauce",
-    img: "/images/topping/topping-caramel.png",
+    img: assetUrl('images/topping/topping-caramel.png'),
     title: "Caramel Swirl",
     desc: "Buttery sweetness that clings to the edges—dangerously moreish.",
     price: "+$0.70",
@@ -30,7 +32,7 @@ const toppings = [
 },
 {
     id: "oreos",
-    img: "/images/topping/topping-oreos.png",
+    img: assetUrl('images/topping/topping-oreos.png'),
     title: "Crushed Cookies",
     desc: "Chocolate cookie crumble for a chunky, creamy contrast.",
     price: "+$0.90",
@@ -39,7 +41,7 @@ const toppings = [
 },
 {
     id: "almonds",
-    img: "/images/topping/topping-almonds.png",
+    img: assetUrl('images/topping/topping-almonds.png'),
     title: "Toasted Almonds",
     desc: "Warm, nutty bite that plays nice with every flavor.",
     price: "+$1.00",
@@ -48,7 +50,7 @@ const toppings = [
 },
 {
     id: "whip",
-    img: "/images/topping/topping-whip.png",
+    img: assetUrl('images/topping/topping-whip.png'),
     title: "Whipped Cream",
     desc: "Light, cloudlike crown for a classic finish.",
     price: "+$0.60",

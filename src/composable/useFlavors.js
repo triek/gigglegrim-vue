@@ -1,9 +1,11 @@
+import { assetUrl } from '../utils/assetPath'
+
 export function initFlavors() {
 (() => {
 const flavors = [
 {
     id: "vanilla",
-    img: "/images/flavor/flavor-vanilla.png",
+    img: assetUrl('images/flavor/flavor-vanilla.png'),
     title: "Vanilla Delight",
     desc: "A creamy classic with a taste that feels familiar, even if you've never tried it before.",
     price: "$4.50",
@@ -12,7 +14,7 @@ const flavors = [
 },
 {
     id: "choco",
-    img: "/images/flavor/flavor-choco.png",
+    img: assetUrl('images/flavor/flavor-choco.png'),
     title: "Chocolate Heaven",
     desc: "Rich and smooth, with a depth of cocoa that seems to draw you in a little further with every bite.",
     price: "$5.00",
@@ -21,7 +23,7 @@ const flavors = [
 },
 {
     id: "strawberry",
-    img: "/images/flavor/flavor-strawberry.png",
+    img: assetUrl('images/flavor/flavor-strawberry.png'),
     title: "Strawberry Bliss",
     desc: "Fresh strawberries swirled into creamy sweetness, with a flavor that lingers like a memory you can't quite place.",
     price: "$4.80",
@@ -30,7 +32,7 @@ const flavors = [
 },
 {
     id: "mint",
-    img: "/images/flavor/flavor-mint.png",
+    img: assetUrl('images/flavor/flavor-mint.png'),
     title: "Mint Choco Chip",
     desc: "Cool, refreshing mint blended with crunchy chocolate chips - the perfect balance of fresh and indulgent.",
     price: "$4.70",
@@ -39,7 +41,7 @@ const flavors = [
 },
 {
     id: "cookie",
-    img: "/images/flavor/flavor-cookie.png",
+    img: assetUrl('images/flavor/flavor-cookie.png'),
     title: "Cookies & Cream",
     desc: "Crunchy cookie chunks swirled into smooth cream, making every bite a delightful mix of textures and flavors.",
     price: "$5.20",
@@ -48,7 +50,7 @@ const flavors = [
 },
 {
     id: "caramel",
-    img: "/images/flavor/flavor-caramel.png",
+    img: assetUrl('images/flavor/flavor-caramel.png'),
     title: "Caramel Swirl",
     desc: "Velvety caramel ribbons running through creamy vanilla, with just the right touch of buttery sweetness.",
     price: "$5.30",

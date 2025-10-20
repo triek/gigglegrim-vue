@@ -146,7 +146,7 @@
                 <!-- Design 1 -->
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="/images/tshirt/icecreamshirt1.png" class="card-img-top h-100" alt="Design 1">
+                        <img :src="assetUrl('images/tshirt/icecreamshirt1.png')" class="card-img-top h-100" alt="Design 1">
                         <div class="card-body">
                             <h5 class="card-title">Design 1</h5>
                             <p class="card-text small">A friendly little cone with a big smile. This T-shirt keeps it simple and sweet, perfect for everyday wear.</p>
@@ -161,7 +161,7 @@
                 <!-- Design 2 -->
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="/images/tshirt/chillin1.png" class="card-img-top h-100" alt="Design 2">
+                        <img :src="assetUrl('images/tshirt/chillin1.png')" class="card-img-top h-100" alt="Design 2">
                         <div class="card-body">
                             <h5 class="card-title">Design 2</h5>
                             <p class="card-text small">Someone's already saving you a spot. This design blends a retro scene with a classic white tee style.</p>
@@ -176,7 +176,7 @@
                 <!-- Design 3 -->
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
-                        <img src="/images/tshirt/clownshirt1.png" class="card-img-top h-100" alt="Design 3">
+                        <img :src="assetUrl('images/tshirt/clownshirt1.png')" class="card-img-top h-100" alt="Design 3">
                         <div class="card-body">
                             <h5 class="card-title">Design 3</h5>
                             <p class="card-text small">Mr. Grim is here to share a scoop. This comfy white T-shirt pops with vibrant color and cartoon character art.</p>
@@ -191,7 +191,7 @@
                 <!-- Design 4 -->
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
-                    <img src="/images/tshirt/freezer1.png" class="card-img-top h-100" alt="Design 4">
+                    <img :src="assetUrl('images/tshirt/freezer1.png')" class="card-img-top h-100" alt="Design 4">
                         <div class="card-body">
                             <h5 class="card-title">Design 4</h5>
                             <p class="card-text small">Our freezer's always open for a late-night treat. This classic-fit T-shirt pairs a striking graphic with a versatile everyday style.</p>
@@ -353,3 +353,7 @@
 
 </body>
 </template>
+
+<script setup>
+import { assetUrl } from '../utils/assetPath'
+</script>
